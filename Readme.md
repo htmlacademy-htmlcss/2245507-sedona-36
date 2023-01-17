@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Laura Bambaeva](https://up.htmlacademy.ru/htmlcss/36/user/2245507).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Даниленко](https://htmlacademy.ru/profile/id1205385)
 
 ---
 
