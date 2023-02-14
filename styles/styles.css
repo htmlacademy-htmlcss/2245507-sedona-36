@@ -20,6 +20,13 @@ body {
     line-height: 28px;
     color: #000000;
     background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -27,21 +34,43 @@ body {
     background: #FFFFFF;
 }
 
+.visually-hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
 .navigation-link {
     font-family: "PT Sans", sans-serif;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    text-align: ;
     color: #000000;
     background-color: #FFFFFF;
     text-decoration: none;
     text-transform: capitalize;
 }
 
-.main-index {
-    color: #000000;
-    background-color: #FFFFFF;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
     background-image: url("../images/index-bg.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding: 51px 0 82px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    display: block;
 }
