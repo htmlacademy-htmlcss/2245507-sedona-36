@@ -74,3 +74,53 @@ body {
 .hero-img {
     display: block;
 }
+
+.advantages-title {
+    color: #000000;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+  max-height: 385px;
+  padding: 103px 85px;
+}
+
+.advantages-item img {
+    display: block;
+    width: 100%;
+}
+
+.advantages-item_houses {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.advantages-item_bridge {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
