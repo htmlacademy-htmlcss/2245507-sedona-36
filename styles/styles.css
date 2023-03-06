@@ -36,15 +36,6 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
 
 body {
     padding: 0;
@@ -52,8 +43,15 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 28px;
-    color: #000000;
-    background-color: #FFFFFF;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 0 70px;
 }
 
 .button {
@@ -84,7 +82,6 @@ body {
 
 .logo {
     display: block;
-    max-width: 100%;
     margin-bottom: -6px;
 }
 
@@ -146,26 +143,31 @@ body {
     display: block;
 }
 
-.advantages-title {
-    color: #000000;
-    background-color: #FFFFFF;
-    font-style: normal;
+/*предпоказ*/
+.preview {
+    padding: 69px 290px
+    
+    text-align: center;c;
+}
+
+.preview-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+
 }
 
-.description {
-    color: #333333;
+.preview-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-
+    color: #333333;
 }
 
+/*блок с преимуществами*/
 .advantages-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -180,20 +182,70 @@ body {
   text-align: center;
 }
 
-.advantages-item img {
-    display: block;
-    width: 100%;
+.advantages-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.advantages-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    text-transform: none;
+    color: #333333;
+}
+
+.advantages-separate {
+    height: 2px;
+    width: 25%;
+    background: #00000030;
+    margin: 0 auto;
+}
+
+.advantages-item_normal, .advantages-item_normal p {
+    background: #82B3D3;
+    color: #ffffff;
+}
+
+.advantages-item_normal>.advantages-separate {
+    background: #ffffff30;
+
+}
+
+.advantages-item_medium {
+    background: #82B3D312;
+
+}
+
+.advantages-item_light {
+    background: #82B3D320;
+
 }
 
 .advantages-item_houses {
     grid-column-start: 2;
     grid-column-end: 4;
-
+    background-image: url("../images/city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .advantages-item_bridge {
     grid-column-start: 1;
     grid-column-end: 3;
+    background-image: url("../images/bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .advantages {
@@ -205,6 +257,48 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+}
+
+/*преимущества2*/
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-item {
+    max-height: 385px;
+    padding: 103px 85px;
+    text-align: center;
+}
+
+.service-item:first-child, .service-item:last-child {
+    background: #82B3D312;
+}
+
+.service-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.service-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    text-transform: none;
+    color: #333333;
 }
 
 .offers {
@@ -319,4 +413,22 @@ body {
 .pagination-current {
     color: #000000;
     background-color: #f2f2f2;
+}
+
+.page-footer {
+    background-color: #FFFFFF;
+}
+
+.page-footer a {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-social {
+    margin-right: auto;
+    max-width: 
 }
