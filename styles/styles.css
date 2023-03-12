@@ -70,6 +70,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .button_primary {
@@ -323,6 +326,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  padding: 96px 20px;
 }
 
 .offers-title {
@@ -331,8 +335,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  margin: 0;
 }
 
 .offers-description {
@@ -342,11 +345,13 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  padding-bottom: 54px;
+  margin: 0;
+  margin-top: 20px;
+  text-transform: none;
 }
 
 .offers-button {
-  border-radius: 4px;
+  margin-top: 54px;
 }
 
 .inner-header-title {
@@ -355,11 +360,14 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  background-image: url("../images/catalog-background.jpg");
+  margin: 0;
 }
 
 .breadcrumbs {
   color: #FFFFFF;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-item {}
@@ -388,6 +396,89 @@ body {
   color: #333333;
   background-color: #FFFFFF;
 }
+
+.catalog-hotels {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 25px 70px 70px;
+
+}
+
+.inner-header-title {}
+
+.breadcrumbs-link {}
+
+.catalog-filter {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+
+}
+
+.catalog-filter-group {
+  border: none;
+
+}
+
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.control {
+  position: relative;
+  padding-left: 36px;
+
+}
+
+.control-input {
+  display: none;
+
+}
+
+.control-input + .control::before,
+.control-input-radio + .control-radio::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.control-input:checked + .control::after {}
+
+.catalog-filter-item {}
+
+.control-radio {
+  padding-left: 36px;
+}
+
+.control-input-radio {
+  display: none;
+
+}
+
+.control-input-radio + .control-radio::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+}
+
+
 
 .hotel-list {
   list-style: none;

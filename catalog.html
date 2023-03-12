@@ -65,20 +65,20 @@
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Бассейн" checked>
+                <input id="pool" class="control-input" type="checkbox" name="Бассейн" checked>
+                <label for="pool" class="control">
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Парковка" checked>
+                <input id="rest" class="control-input" type="checkbox" name="Парковка" checked>
+                <label for="rest" class="control">
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="WI-FI">
+                <input id="wifi" class="control-input" type="checkbox" name="WI-FI">
+                <label for="wifi" class="control">
                   WI-FI
                 </label>
               </li>
@@ -90,20 +90,20 @@
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="Hotel" checked>
+                <input id="hotels" class="control-input-radio" type="radio" name="type-of-housing" value="Hotel" checked>
+                <label for="hotels" class="control-radio">
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                <input id="motel" class="control-input-radio" type="radio" name="type-of-housing" value="motel">
+                <label for="motel" class="control-radio">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="Apartments">
+                <input id="apartments" class="control-input-radio" type="radio" name="type-of-housing" value="Apartments">
+                <label for="apartments" class="control-radio">
                   Апартаменты
                 </label>
               </li>
@@ -111,8 +111,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-title">Стоимость,
-            </legend>
+            <legend class="catalog-title">Стоимость</legend>
             <ul class="catalog-filter-prices">
               <li class="catalog-filter-price">
                 <label class="catalog-filter-price-label">
