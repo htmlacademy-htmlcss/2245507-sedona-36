@@ -425,7 +425,8 @@ body {
   display: flex;
   margin-top: 40px;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
+
 }
 
 .catalog-filter-group {
@@ -547,9 +548,11 @@ body {
 
 }
 
+
 .catalog-filter-slider {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  gap: 36px 2px;
 
 }
 
@@ -557,7 +560,20 @@ body {
   display: flex;
   background: #FFFFFF;
   max-width: 143px;
+}
 
+.catalog-filter-price-range {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.label-left {
+  border-radius: 4px 0 0 4px;
+
+}
+
+.label-right {
+  border-radius: 0 4px 4px 0;
 }
 
 .catalog-filter-price-input {
@@ -565,11 +581,16 @@ body {
   width: 100%;
   background: none;
   border: none;
+  padding: 12px 0 12px 20px;
 }
 
 .catalog-filter-price-span {
-
+  font-size: 18px;
+  line-height: 24px;
+  color: #3F5E72;
+  padding: 12px 20px 12px 12px;
 }
+
 
 .button-wrapper {
   margin-left: 70px;
