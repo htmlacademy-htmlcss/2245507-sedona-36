@@ -543,6 +543,7 @@ body {
 
 .catalog-filter-price {
   display: flex;
+  align-items: center;
 
 }
 
@@ -553,12 +554,19 @@ body {
 }
 
 .catalog-filter-price-label {
+  display: flex;
+  background: #FFFFFF;
+  max-width: 143px;
 
 }
 
 .catalog-filter-price-input {
-
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
 }
+
 .catalog-filter-price-span {
 
 }
