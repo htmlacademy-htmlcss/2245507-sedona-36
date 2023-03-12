@@ -61,7 +61,7 @@
         </ul>
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-group-checkbox">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -86,23 +86,23 @@
           </fieldset>
 
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-group-radio">
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <input id="hotels" class="control-input-radio" type="radio" name="type-of-housing" value="Hotel" checked>
+                <input id="hotels" class="control-input-radio" type="radio" name="type-of-housing"checked>
                 <label for="hotels" class="control-radio">
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <input id="motel" class="control-input-radio" type="radio" name="type-of-housing" value="motel">
+                <input id="motel" class="control-input-radio" type="radio" name="type-of-housing">
                 <label for="motel" class="control-radio">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <input id="apartments" class="control-input-radio" type="radio" name="type-of-housing" value="Apartments">
+                <input id="apartments" class="control-input-radio" type="radio" name="type-of-housing">
                 <label for="apartments" class="control-radio">
                   Апартаменты
                 </label>
@@ -110,7 +110,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-group-price">
             <legend class="catalog-title">Стоимость</legend>
             <ul class="catalog-filter-prices">
               <li class="catalog-filter-price">
@@ -134,8 +134,8 @@
           </fieldset>
 
           <div class="button-wrapper">
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <button class="button button_primary" type="submit">Применить</button>
+            <button class="button button_transparent" type="reset">Сбросить</button>
           </div>
         </form>
       </section>

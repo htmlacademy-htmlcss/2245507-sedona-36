@@ -61,7 +61,7 @@ body {
 
 .button {
   font-family: inherit;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
@@ -85,6 +85,10 @@ body {
 
 .button_thirdy {
   background: var(--bg-grey-primary);
+}
+
+.button_transparent {
+  background: transparent;
 }
 
 .container {
@@ -162,8 +166,8 @@ body {
 
 /*предпоказ*/
 .preview {
-  padding: 69px 290px text-align: center;
-  c;
+  padding: 69px 290px;
+  text-align: center;
 }
 
 .preview-title {
@@ -352,6 +356,8 @@ body {
 
 .offers-button {
   margin-top: 54px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .inner-header-title {
@@ -407,20 +413,39 @@ body {
 
 .inner-header-title {}
 
-.breadcrumbs-link {}
+.breadcrumbs-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
 
 .catalog-filter {
   display: flex;
   margin-top: 40px;
-  justify-content: space-between;
-
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group-checkbox {
 
 }
 
+.catalog-filter-group-radio {
+  margin-left: 70px;
+}
+
+.catalog-filter-group-price {
+  margin-left: 140px;
+
+}
 
 .catalog-filter-list {
   list-style: none;
@@ -432,6 +457,7 @@ body {
 .control {
   position: relative;
   padding-left: 36px;
+  cursor: pointer;
 
 }
 
@@ -440,8 +466,8 @@ body {
 
 }
 
-.control-input + .control::before,
-.control-input-radio + .control-radio::before {
+.control-input+.control::before,
+.control-input-radio+.control-radio::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -453,12 +479,26 @@ body {
   transform: translate(0, -50%);
 }
 
-.control-input:checked + .control::after {}
+.control-input:checked+.control::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+  border-radius: 4px;
+  background-image: url("../images/vector.svg");
+  background-repeat: no-repeat;
+
+}
 
 .catalog-filter-item {}
 
 .control-radio {
   padding-left: 36px;
+  position: relative;
+  cursor: pointer;
 }
 
 .control-input-radio {
@@ -466,7 +506,7 @@ body {
 
 }
 
-.control-input-radio + .control-radio::before {
+.control-input-radio+.control-radio::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -479,6 +519,45 @@ body {
 }
 
 
+.control-input-radio:checked+.control-radio::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+  background-color: #3F5E72;
+  border-radius: 50%;
+}
+
+.catalog-title {
+
+}
+
+.catalog-filter-prices {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.catalog-filter-price-label {
+
+}
+
+.catalog-filter-price-input {
+
+}
+.catalog-filter-price-span {
+
+}
+
+.button-wrapper {
+  margin-left: 70px;
+  display: grid;
+  flex-grow: 1;
+}
 
 .hotel-list {
   list-style: none;
@@ -647,6 +726,8 @@ body {
 .email-button {
   min-width: 232px;
   padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .email-form {
