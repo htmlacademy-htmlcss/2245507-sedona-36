@@ -832,7 +832,7 @@ label:active {
 }
 
 .hotel-card-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -967,8 +967,12 @@ label:active {
   background-repeat: no-repeat;
 }
 
+.email-catalog {
+  background: none;
+}
+
 .email-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -979,8 +983,12 @@ label:active {
   text-transform: uppercase;
 }
 
+.email-title-catalog {
+  color: #000000;
+}
+
 .email-description {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -991,11 +999,24 @@ label:active {
   margin-top: 20px;
 }
 
+.email-description-catalog {
+  color: #000000;
+}
+
 .email-input-wrapper {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.email-input-wrapper-catalog {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
   border-radius: 4px;
   margin: 0 auto;
 }
@@ -1023,7 +1044,6 @@ label:active {
   justify-content: center;
   margin-top: 54px;
 }
-
 
 .page-footer {
   display: flex;
