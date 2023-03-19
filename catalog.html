@@ -19,13 +19,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current-catalog" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -134,23 +134,30 @@
             <ul class="catalog-filter-prices catalog-filter-slider">
               <li class="catalog-filter-price">
                 <label class="catalog-filter-price-label label-left" for="from">
-                  <input class="catalog-filter-price-input" id="from" type="text" placeholder="0" required value="0">
+                  <input class="catalog-filter-price-input" name="catalog" id="from" type="text" placeholder="0" required value="0">
                   <span class="catalog-filter-price-span">от</span>
                 </label>
               </li>
               <li class="catalog-filter-price">
                 <label class="catalog-filter-price-label label-right" for="to">
-                  <input class="catalog-filter-price-input" id="to" type="text" placeholder="9000" required
+                  <input class="catalog-filter-price-input" name="catalog" id="to" type="text" placeholder="9000" required
                     value="9000">
                   <span class="catalog-filter-price-span">до</span>
                 </label>
               </li>
               <li class="catalog-filter-price-range">
-                <label class="catalog-filter-range-label">
-                  <span class="visually-hidden">Слайдер цены</span>
-                  <input class="catalog-filter-range" type="range" name="range" min="0" max="9000" step="1"
-                    value="6000">
-                </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </fieldset>
