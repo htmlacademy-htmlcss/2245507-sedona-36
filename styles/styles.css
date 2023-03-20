@@ -247,6 +247,7 @@ body {
 }
 
 .navigation-button {
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 32px;
@@ -356,28 +357,34 @@ body {
   margin: 0 auto;
 }
 
-.advantages-item_normal,
-.advantages-item_normal p {
+.advantages-item-normal,
+.advantages-item-normal p {
   background: #82B3D3;
   color: #ffffff;
 }
 
-.advantages-item_normal>.advantages-separate {
+.advantages-item-normal {
+  padding-top: 112px;
+}
+
+.advantages-item-normal>.advantages-separate {
   background: #ffffff30;
 
 }
 
-.advantages-item_medium {
+.advantages-item-medium {
   background: #82B3D320;
+  padding-top: 112px;
 
 }
 
-.advantages-item_light {
+.advantages-item-light {
   background: #82B3D312;
+  padding-top: 112px;
 
 }
 
-.advantages-item_houses {
+.advantages-item-houses {
   grid-column-start: 2;
   grid-column-end: 4;
   background-image: url("../images/city.jpg");
@@ -385,7 +392,7 @@ body {
   background-size: cover;
 }
 
-.advantages-item_bridge {
+.advantages-item-bridge {
   grid-column-start: 1;
   grid-column-end: 3;
   background-image: url("../images/bridge.jpg");
@@ -937,12 +944,12 @@ body {
 
 .catalog-filter-price-input {
   font-family: "PT Sans", sans-serif;
-  display: block;
-  color: #000000;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  display: block;
+  color: #000000;
+  font-style: normal;
   width: 100%;
   background: none;
   border: none;
@@ -1223,7 +1230,23 @@ body {
   height: 100%;
   width: 100%;
   min-width: 425px;
-  padding: 14px 20px;
+}
+
+.email-input-label {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  color: #00000060;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 260px;
+  width: 452px;
+  height: 52px;
+
 }
 
 .email-button {
@@ -1232,6 +1255,8 @@ body {
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0px 4px 4px 0px;
+  ;
 }
 
 .email-form {
