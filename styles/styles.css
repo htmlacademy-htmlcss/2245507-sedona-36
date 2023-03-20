@@ -936,6 +936,7 @@ body {
 }
 
 .catalog-filter-price-input {
+  font-family: "PT Sans", sans-serif;
   display: block;
   color: #000000;
   font-style: normal;
@@ -1356,7 +1357,7 @@ body {
 }
 
 .auth-form-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   display: flex;
   justify-content: center;
