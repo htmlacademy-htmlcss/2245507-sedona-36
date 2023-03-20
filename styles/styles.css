@@ -43,13 +43,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 28px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: #F2F2F2;
 }
 
 .shadow-wrapper {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 0 15px #00000020;
+  background-color: #FFFFFF;
 }
 
 .page {
@@ -100,7 +99,7 @@ body {
   background-color: #68A2CA;
 }
 
-..button_primary:focus {
+.button_primary:focus {
   color: #FFFFFF;
   background-color: #68A2CA;
 }
@@ -348,6 +347,11 @@ body {
   margin-top: 30px;
   text-transform: none;
   color: #333333;
+  padding-bottom: 112px;
+}
+
+.advantages-description-blue {
+  padding-bottom: 102px;
 }
 
 .advantages-separate {
@@ -364,7 +368,7 @@ body {
 }
 
 .advantages-item-normal {
-  padding-top: 112px;
+  padding-top: 102px;
 }
 
 .advantages-item-normal>.advantages-separate {
@@ -387,17 +391,17 @@ body {
 .advantages-item-houses {
   grid-column-start: 2;
   grid-column-end: 4;
-  background-image: url("../images/city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
 }
 
 .advantages-item-bridge {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-image: url("../images/bridge.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
 }
 
 .advantages {
@@ -424,6 +428,11 @@ body {
   max-height: 385px;
   padding: 103px 85px;
   text-align: center;
+  background-color: #83B3D312;
+}
+
+.service-item-light {
+  background-color: #FFFFFF;
 }
 
 .service-item:first-child,
@@ -783,8 +792,8 @@ body {
 }
 
 .control-input {
-  display: none;
-
+  position: absolute;
+  opacity: 0;
 }
 
 .control-input+.control::before,
@@ -815,6 +824,7 @@ body {
 }
 
 .catalog-filter-item {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -831,7 +841,8 @@ body {
 }
 
 .control-input-radio {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .control-input-radio+.control-radio::before {
@@ -935,7 +946,6 @@ body {
 
 .label-left {
   border-radius: 4px 0 0 4px;
-
 }
 
 .label-right {
@@ -982,6 +992,13 @@ body {
   align-self: end;
 }
 
+.button-catalog {
+  width: 191px;
+  height: 36px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
 .button-wrapper .button_primary {
   margin-bottom: 32px;
   font-style: normal;
@@ -1005,8 +1022,6 @@ body {
   border-radius: 4px;
 
 }
-
-.hotel-card-link {}
 
 .hotel-card-image {
   display: block;
@@ -1122,7 +1137,6 @@ body {
 
 .pagination-link:hover {
   background: #68A2CA;
-  ;
 }
 
 .pagination-link:active {
@@ -1241,7 +1255,6 @@ body {
   color: #00000060;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 12px 20px;
   gap: 260px;
   width: 452px;
@@ -1255,8 +1268,7 @@ body {
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
-  border-radius: 0px 4px 4px 0px;
-  ;
+  border-radius: 0 4px 4px 0;
 }
 
 .email-form {
@@ -1302,7 +1314,12 @@ body {
   fill: #68A2CA30;
 }
 
-.footer-phone {}
+.footer-phone {
+  width: 331px;
+  height: 40px;
+  top: 5px;
+  left: 195px;
+}
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -1340,86 +1357,246 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: #f2f2f2cc;
 }
 
 .modal {
   position: relative;
-  margin: auto;
-  padding: 64px 70px;
-  background-color: #ffffff;
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px #00000015;
   border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.modal-auth {
+  padding: 64px 70px;
   width: 717px;
-  display: flex;
+  height: 576px;
 }
 
-.modal-container-close {
-  display: none;
+.modal-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 44px;
-  background-color: #FFFFFF;
-  border: none;
-  background-image: url("../images/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background: none;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-right: -10px;
 }
 
-.auth-form-button {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
+.modal-close-button:active {
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+
+.modal-close-button::after,
+.modal-close-button::before {
   position: absolute;
-  align-items: center;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  width: 577px;
-  height: 60px;
-  left: 0;
-  top: 288px;
-  padding: 18px 77px;
-  margin-top: 48px;
-  margin-bottom: 64px;
-  ;
-  border-radius: 10px;
+  content: "";
+  height: 2px;
+  width: 15px;
+  background-color: #000000;
+}
+
+.modal-close-button::after {
+  transform: rotate(-45deg);
+  left: 19px;
+  top: 26px;
+}
+
+.modal-close-button::before {
+  transform: rotate(45deg);
+  top: 26px;
+  left: 19px;
 }
 
 .modal-title {
   margin: 0;
-  margin-bottom: 64px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.modal-form {
+  margin-top: 64px;
+  display: grid;
+  gap: 48px;
 }
 
 .field-group {
-  display: flex;
-  flex-direction: column;
-  margin: 48px 0;
-  padding: 12px, 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 24px;
+
 }
 
-.auth-form-field {
-  width: 440px;
+.field-group-error {
+  position: absolute;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  bottom: -25px;
+  left: 20px;
+
+
+}
+
+.field-group-error-red {
+  color: #FF5757;
+}
+
+
+.modal-label {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  flex: 1;
+  margin: 0;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-input-wrapper svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.modal-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 88px;
+
+}
+
+.modal-adults {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.modal-adults-label {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-hover-tip {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  width: 256px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px 22px;
+  top: 10px;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+
+.modal-hover-tip:hover  .tooltip {
+  display: block;
+}
+
+.modal-buttons {
+  flex: 1;
+  display: flex;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-button-minus {
+  width: 40px;
+  height: 48px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.modal-buttons path {
+  fill: #75615730;
+}
+
+.modal-buttons:hover path {
+  fill: #000000;
+}
+
+.modal-buttons:active path {
+  fill: #00000020;
+}
+
+.modal-button-count {
+  padding: 14px 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+
+}
+
+.modal-button-plus {
+  width: 40px;
+  height: 48px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.modal-button-find {
+  cursor: pointer;
+  padding: 18px;
+  font-size: 20px;
+  line-height: 24px;
 }
